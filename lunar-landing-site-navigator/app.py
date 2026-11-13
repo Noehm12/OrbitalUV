@@ -1,4 +1,4 @@
-﻿import streamlit as st
+import streamlit as st
 
 st.set_page_config(
     page_title="Lunar Landing Site Navigator",
@@ -6,7 +6,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🌕 Lunar Landing Site Navigator")
+st.title("Lunar Landing Site Navigator")
 
 st.write(
     "Herramienta para analizar y comparar posibles "
