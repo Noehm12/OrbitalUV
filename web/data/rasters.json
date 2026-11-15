@@ -1,0 +1,37 @@
+{
+  "data": {
+    "file": "raw_data.bin",
+    "width": 761,
+    "height": 761,
+    "channels": 3,
+    "sha256": "4f18f1cc9a747fd26e427c30e4a32af17512d5c16101c902dfb5edb69ca7bc85"
+  },
+  "elev": {
+    "file": "raw_elev.bin",
+    "width": 761,
+    "height": 761,
+    "channels": 3,
+    "sha256": "704f7b0592fd3c217a9ab512aa96cf40d4abbb6df8f33944fee0d78670f9f75b"
+  },
+  "aux": {
+    "file": "raw_aux.bin",
+    "width": 761,
+    "height": 761,
+    "channels": 3,
+    "sha256": "09b949213237d5a22e16412325cfb4a2fd510eae1bc1a8695973dc84ba2f091b"
+  },
+  "own": {
+    "file": "raw_own.bin",
+    "width": 761,
+    "height": 761,
+    "channels": 3,
+    "sha256": "efc6e591d21d36d792d5a5800542dbd315bd38e16dc48f4b2e8f94a4afbd0649"
+  },
+  "dem": {
+    "file": "raw_dem.bin",
+    "width": 1520,
+    "height": 1520,
+    "channels": 3,
+    "sha256": "7d37de24c82723ac885e59d3e2cb21de13c0e929cfa17cd945846792ed784969"
+  }
+}

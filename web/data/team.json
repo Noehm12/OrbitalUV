@@ -1,0 +1,29 @@
+{
+  "group_name": "OrbitalUV",
+  "project_name": "Lunar Landing Site Navigator",
+  "event": "NASA Space Apps Challenge 2026",
+  "group_description": "Somos un equipo que desarrolla una herramienta visual para explorar cómo cambian la iluminación solar y la visibilidad geométrica de la Tierra en posibles emplazamientos del polo sur lunar.",
+  "group_description_en": "We are a team building a visual tool to explore how sunlight and the geometric visibility of the Earth change across possible landing sites near the lunar south pole.",
+  "members": [
+    {
+      "name": "Noé Hernández Montero",
+      "photo": "img/team/noe.jpg",
+      "linkedin": "https://www.linkedin.com/in/no%C3%A9-hern%C3%A1ndez-montero-38130932b/"
+    },
+    {
+      "name": "Bárbara María Alonso Dobon",
+      "photo": "img/team/barbara.jpg",
+      "linkedin": "https://www.linkedin.com/in/baardoob/"
+    },
+    {
+      "name": "Fran Tomás Raya",
+      "photo": "img/team/fran.jpg",
+      "linkedin": "https://www.linkedin.com/in/fran-t-356846324/"
+    },
+    {
+      "name": "Rebeca Urquijo Diranzo",
+      "photo": "img/team/rebeca.jpg",
+      "linkedin": "https://www.linkedin.com/in/rebeca-urquijo-diranzo-0867393b4/"
+    }
+  ]
+}

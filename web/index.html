@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OrbitalUV · Polo sur lunar</title>
+    <script>try { var v=localStorage.getItem('lsp-theme'); document.documentElement.dataset.theme=v==='light'||v==='dark'?v:(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'); } catch(e){document.documentElement.dataset.theme='dark';}</script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="boot" role="status"><span id="bootMsg">Cargando…</span></div>
+    <a class="skip-link" href="#mainContent" data-i18n="skip_content"></a>
+    <header class="top">
+      <div class="wrap">
+        <button class="brand" id="brandBtn" type="button" aria-label="Inicio">
+          <svg viewBox="0 0 48 48" aria-hidden="true" class="brand-mark"><circle cx="24" cy="24" r="15" fill="#f4f2eb"/><path d="M24 9a15 15 0 0 1 0 30c6-8 6-22 0-30Z" fill="#81909b"/><circle cx="18" cy="18" r="3" fill="#c6cbc7"/><circle cx="20" cy="30" r="2.4" fill="#bcc3c0"/><ellipse cx="24" cy="24" rx="23" ry="9" transform="rotate(-36 24 24)" fill="none" stroke="var(--nav-active)" stroke-width="2"/><circle cx="41" cy="11" r="3" fill="var(--nav-active)"/></svg>
+          <span class="brand-name" data-i18n="brand"></span>
+        </button>
+        <nav class="main" id="mainNav" aria-label="Pantallas">
+          <a href="#inicio" data-route="inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H6V10m4 10v-6h4v6"/></svg><span data-i18n="nav_home"></span></a>
+          <a href="#calculadora" data-route="calculadora"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 16l-3 3m6-3 3 3 2-5m-8-3-3-1 4-4 3 1m-3 5c3-6 7-9 12-9 0 5-3 9-9 12z"/><circle cx="16" cy="8" r="1.6"/></svg><span data-i18n="nav_calc"></span></a>
+          <a href="#mas" data-route="mas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/></svg><span data-i18n="nav_more"></span></a>
+          <a href="#info" data-route="info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8M10 3v7l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3M8 15h8"/></svg><span data-i18n="nav_info"></span></a>
+          <a href="#equipo" data-route="equipo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v1"/></svg><span data-i18n="nav_team"></span></a>
+        </nav>
+        <div class="tools">
+          <button class="iconbtn" type="button" id="themeBtn"></button>
+          <button class="iconbtn language-btn" type="button" id="langBtn">EN</button>
+          <button class="iconbtn menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="Menú"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path class="menu-open-lines" d="M4 6h16M4 12h16M4 18h16"/><path class="menu-close-lines" d="m6 6 12 12M18 6 6 18"/></svg><span data-i18n="menu_label"></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="mainContent" tabindex="-1">
+      <section id="scr-inicio" hidden>
+        <div class="wrap landing">
+          <div class="hero">
+            <figure class="hero-visual"><img id="homeBg" alt=""/><figcaption><span data-i18n="home_map"></span><span>LOLA / NASA</span></figcaption></figure>
+            <div class="hero-copy"><div class="hero-kicker"><span class="mission-dot" aria-hidden="true"></span><span data-i18n="home_eyebrow"></span></div>
+              <h1 data-i18n="h1"></h1><p class="lead" data-i18n="lead"></p>
+              <div class="actions"><a class="btn primary lg" href="#calculadora"><span data-i18n="door1"></span><span aria-hidden="true">→</span></a><a class="quiet-link" href="#mas" data-i18n="door2"></a></div>
+            </div>
+            
+          </div>
+          <div class="guide-line" aria-label="Recorrido"><a href="#calculadora"><span class="step-no">01</span><span data-i18n="guide1_h"></span><i aria-hidden="true">→</i></a><a href="#resultados" id="homeResults"><span class="step-no">02</span><span data-i18n="guide2_h"></span><i aria-hidden="true">→</i></a><a href="#mas"><span class="step-no">03</span><span data-i18n="guide3_h"></span><i aria-hidden="true">↗</i></a></div>
+          <div class="home-meta"><span><strong id="homeCount">—</strong> <span data-i18n="home_sites"></span> <span class="meta-sep">/</span> 2025–2040</span><a href="#info" data-i18n="home_source"></a></div>
+        </div>
+      </section>
+
+      <section id="scr-calculadora" class="screen" hidden>
+        <div class="wrap">
+          <div class="journey" aria-label="Recorrido"><span class="active"><b>01</b> <span data-i18n="step_dates"></span></span><span><b>02</b> <span data-i18n="step_results"></span></span><span><b>03</b> <span data-i18n="step_explore"></span></span></div>
+          <div class="calc-layout"><div class="calc-intro"><p class="eyebrow" data-i18n="calc_eyebrow"></p><h1 data-i18n="c_h"></h1><p class="lead" data-i18n="calc_intro"></p><details class="explain-mini"><summary data-i18n="calc_expect"></summary><div><span class="metric-dot sun-dot"></span><p><b data-i18n="c1_h"></b><span data-i18n="c1_p"></span></p></div><div><span class="metric-dot earth-dot"></span><p><b data-i18n="c2_h"></b><span data-i18n="c2_p"></span></p></div><a class="text-link" href="#info" data-i18n="calc_learn"></a></details></div><div class="calc"><div class="form-head"><h2 data-i18n="calc_form"></h2></div>
+            <div class="fieldrow">
+              <div class="field">
+                <label for="d0" data-i18n="c_date"></label><input type="date" id="d0" />
+              </div>
+              <div class="field">
+                <label for="h0" data-i18n="c_time"></label><input type="time" id="h0" step="60" />
+              </div>
+            </div>
+            <div class="field">
+              <span class="label" data-i18n="c_stay"></span>
+              <div class="chips" id="stayChips">
+                <button data-d="1">1 d</button><button data-d="3">3 d</button
+                ><button data-d="7" aria-pressed="true">7 d</button><button data-d="14">14 d</button
+                ><button data-d="30">30 d</button><button data-d="90">90 d</button
+                ><button data-d="365">365 d</button>
+              </div>
+            </div>
+            <details id="advBox">
+              <summary data-i18n="c_adv"></summary>
+              <div style="display: flex; flex-direction: column; gap: 12px">
+                <div class="field">
+                  <label for="tz" data-i18n="c_tz"></label
+                  ><select id="tz">
+                    <option value="Europe/Madrid" data-i18n="tz_es"></option>
+                    <option value="UTC" data-i18n="tz_utc"></option>
+                  </select>
+                </div>
+                <label style="display: flex; gap: 8px; align-items: center; cursor: pointer"
+                  ><input
+                    type="checkbox"
+                    id="customEnd"
+                    style="width: 18px; height: 18px; accent-color: var(--primary)" /><span
+                    data-i18n="c_custom_end"
+                  ></span
+                ></label>
+                <div class="fieldrow" id="endFields" hidden>
+                  <div class="field">
+                    <label for="d1" data-i18n="c_end_date"></label><input type="date" id="d1" />
+                  </div>
+                  <div class="field">
+                    <label for="h1" data-i18n="c_end_time"></label><input type="time" id="h1" step="60" />
+                  </div>
+                </div>
+              </div>
+            </details>
+            <div class="mission-summary"><span class="small" data-i18n="calc_period"></span><p class="muted num" id="summary"></p></div>
+            <p class="err" id="calcErr" role="alert"></p>
+            <div><button class="btn primary lg" id="calcBtn" data-i18n="c_go"></button><p class="small muted form-note" data-i18n="calc_notice"></p></div>
+          </div></div>
+        </div>
+      </section>
+
+      <section id="scr-cargando" hidden aria-labelledby="launchTitle">
+        <div class="wrap launch-layout">
+          <div class="launch" id="launch" aria-hidden="true">
+            <div class="stars"></div>
+            <div class="moon"></div>
+            <div class="orbital-rings"></div>
+            <div class="launch-grid"></div>
+            <div class="launch-atmosphere"></div>
+            <div class="launch-caption"><span>ORBITALUV</span><span data-i18n="launch_target"></span></div>
+            <svg class="flight-track" viewBox="0 0 400 430" preserveAspectRatio="none"><path d="M200 58V360" stroke="#86b7ff" stroke-opacity=".4" stroke-width="1" stroke-dasharray="5 10"/><circle cx="200" cy="70" r="34" fill="none" stroke="#8bbaff" stroke-opacity=".22"/><circle cx="200" cy="70" r="18" fill="none" stroke="#8bbaff" stroke-opacity=".12"/></svg>
+            <div class="smoke s1"></div><div class="smoke s2"></div><div class="smoke s3"></div><div class="smoke s4"></div><div class="smoke s5"></div>
+            <div class="exhaust-glow"></div>
+            <svg class="pad" viewBox="0 0 440 100"><path d="M0 84 52 73 142 77 248 63 344 78 440 68V100H0Z" fill="#122132"/><path d="M0 84H440M145 76H300M170 67H269" fill="none" stroke="#5d7895" stroke-width="1.5"/><g fill="none" stroke="#6f89a5" stroke-width="2"><path d="M312 76V12h-14V76M298 12 312 27 298 42 312 56 298 70M298 27H248M298 42H264"/></g><path d="M155 77H285" stroke="#9cc6ff" stroke-width="2.3"/></svg>
+            <div class="rocket-wrap">
+              <svg viewBox="0 0 150 320" role="img" aria-label="Rocket launch">
+                <defs>
+                  <linearGradient id="rocketBody" x1="0" x2="1"><stop offset="0" stop-color="#dae5f2"/><stop offset=".33" stop-color="#ffffff"/><stop offset=".68" stop-color="#e8eef6"/><stop offset="1" stop-color="#b9cadc"/></linearGradient>
+                  <linearGradient id="rocketBlue" x1="0" x2="1"><stop offset="0" stop-color="#0a407a"/><stop offset="1" stop-color="#2d79cc"/></linearGradient>
+                  <radialGradient id="windowGlow" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#dff2ff"/><stop offset="1" stop-color="#5aa1f0"/></radialGradient>
+                  <linearGradient id="exhaustCore" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#c6e4ff"/><stop offset=".7" stop-color="#63a7ff"/><stop offset="1" stop-color="#2e5c99" stop-opacity="0"/></linearGradient>
+                </defs>
+                <g class="flame">
+                  <path d="M56 246 Q50 278 75 318 Q100 278 94 246Z" fill="#5ea4ff" opacity=".24"/>
+                  <path d="M62 246 Q56 273 75 303 Q94 273 88 246Z" fill="url(#exhaustCore)"/>
+                  <path d="M69 246 75 284 81 246Z" fill="#ffffff"/>
+                </g>
+                <g class="rocket-shadow" opacity=".18"><ellipse cx="75" cy="250" rx="34" ry="8" fill="#7bb7ff"/></g>
+                <g class="rocket-body" stroke="#7d94ae" stroke-width="1">
+                  <path d="M52 228V74Q52 38 75 12Q98 38 98 74V228Z" fill="url(#rocketBody)"/>
+                  <path d="M52 88H98V102H52Z" fill="url(#rocketBlue)" stroke="none"/>
+                  <rect x="64" y="52" width="22" height="24" rx="11" fill="url(#windowGlow)" stroke="#e4f3ff" stroke-width="2"/>
+                  <path d="M56 121H94" stroke="#b8c8d9"/>
+                  <path d="M60 134H90" stroke="#c6d2df"/>
+                  <path d="M58 148H92" stroke="#d0d9e4"/>
+                  <path d="M58 164H92" stroke="#d0d9e4"/>
+                  <path d="M58 180H92" stroke="#d0d9e4"/>
+                </g>
+                <g fill="url(#rocketBody)" stroke="#7d94ae" stroke-width="1">
+                  <path d="M35 212V126Q39 104 49 93Q55 106 58 126V230H35Z"/>
+                  <path d="M92 230V126Q95 106 101 93Q111 104 115 126V212Z"/>
+                  <path d="M52 195 33 230H52Z"/>
+                  <path d="M98 195 117 230H98Z"/>
+                </g>
+                <path d="M56 228H94L88 246H62Z" fill="#8ea4bc"/>
+                <path d="M75 12V32" stroke="#ffffff" stroke-opacity=".55"/>
+                <text x="75" y="145" text-anchor="middle" font-size="9" font-weight="700" fill="#2c5f99" transform="rotate(-90 75 145)">ORBITALUV</text>
+              </svg>
+            </div>
+            <div class="launch-foot"><span class="launch-signal"></span><span data-i18n="launch_visual"></span></div>
+          </div>
+          <div class="launch-info">
+            <p class="eyebrow" data-i18n="launch_kicker"></p>
+            <h2 id="launchTitle" data-i18n="loading_title"></h2>
+            <div class="countdown num" id="countdown" aria-hidden="true">T−03</div>
+            <div class="launch-progress-head"><span data-i18n="launch_progress"></span><span class="num" id="launchStage">0 / 5</span></div>
+            <div class="launch-progress" id="launchProgress" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-labelledby="launchTitle"><span></span></div>
+            <ul class="lsteps" id="lsteps"></ul>
+            <p class="launch-note" data-i18n="launch_note"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="scr-resultados" class="screen" hidden><div class="wrap" id="resWrap"></div></section>
+
+      <section id="scr-equipo" class="screen" hidden><div class="wrap team" id="teamWrap"></div></section>
+      <section id="scr-mas" class="screen" hidden>
+        <div class="wrap">
+          <div class="page-heading"><p class="eyebrow" data-i18n="explore_eyebrow"></p><h1 data-i18n="m_title"></h1><p class="lead" data-i18n="explore_intro"></p></div>
+          <nav class="subnav" aria-label="Secciones">
+            <a href="#mas" data-jump="explorer" data-i18n="sn2"></a><a href="#mas" data-jump="light" data-i18n="sn3"></a><a href="#info" data-i18n="nav_info"></a>
+          </nav>
+
+          <section class="block" id="explorer">
+            <h2 style="margin-bottom: 12px" data-i18n="e_h"></h2><details class="inline-help"><summary data-i18n="map_help_title"></summary><p data-i18n="map_help"></p></details>
+            <div class="explore">
+              <div>
+                <div class="period">
+                  <div class="tabs" role="tablist" id="periodTabs">
+                    <button class="tab" data-p="nasa" data-i18n="per_nasa"></button
+                    ><button class="tab" data-p="dates" data-i18n="per_dates"></button>
+                  </div>
+                  <div class="dmctl" id="dmCtl" hidden>
+                    <div class="field">
+                      <label for="dmDate" data-i18n="dm_start"></label><input type="date" id="dmDate" />
+                    </div>
+                    <div class="field">
+                      <span class="label" data-i18n="dm_len"></span>
+                      <div class="chips" id="dmChips">
+                        <button data-d="1">1 d</button><button data-d="7">7 d</button
+                        ><button data-d="14">14 d</button><button data-d="30" aria-pressed="true">30 d</button
+                        ><button data-d="90">90 d</button><button data-d="365">365 d</button>
+                      </div>
+                    </div>
+                    <button class="btn primary" id="dmGo" data-i18n="dm_go"></button>
+                    <div class="prog"><span id="dmProg"></span></div>
+                    <p class="small muted" id="dmInfo"></p>
+                  </div>
+                </div>
+                <div class="tabs" role="tablist" id="layerTabs"></div>
+                <div class="map-status" id="mapStatus" aria-live="polite"></div>
+                <div class="mapbox" id="moreMapBox">
+                  <canvas id="moreMap" role="img" aria-label="Mapa"></canvas>
+                  <div class="north" data-i18n="toEarth"></div>
+                  <div class="zoom">
+                    <button data-z="in" data-i18n-aria="zoom_in" aria-label="Acercar">+</button><button data-z="out" data-i18n-aria="zoom_out" aria-label="Alejar">−</button
+                    ><button data-z="reset" data-i18n-aria="zoom_reset" aria-label="Restablecer" style="font-size: 16px">⟲</button>
+                  </div>
+                  <div class="readout"></div>
+                </div>
+                <div class="legend" id="legend"></div>
+                <details class="map-options"><summary data-i18n="map_options"></summary><div class="toggles">
+                  <label><input type="checkbox" id="optTerrain" checked /> <span data-i18n="optTerrain"></span></label>
+                  <label><input type="checkbox" id="optPsr" /> <span data-i18n="optPsr"></span></label>
+                  <label
+                    ><input type="checkbox" id="optNames" checked /> <span data-i18n="optNames"></span
+                  ></label>
+                  <label
+                    ><input type="checkbox" id="optGrid" checked /> <span data-i18n="optGrid"></span
+                  ></label>
+                </div></details>
+              </div>
+              <aside id="morePanel" aria-live="polite"></aside>
+            </div>
+          </section>
+          <section class="block" id="light">
+            <h2 style="margin-bottom: 6px" data-i18n="lt_h"></h2>
+            <details class="inline-help"><summary data-i18n="shadow_help_title"></summary><p data-i18n="lt_p"></p></details>
+            <div class="shadowgrid">
+              <div class="shadowbox"><canvas id="moreShadow"></canvas></div>
+              <div class="ctrl">
+                <div class="field">
+                  <label for="ltDate" data-i18n="lt_start"></label><input type="date" id="ltDate" />
+                </div>
+                <button class="btn primary" id="ltGo" data-i18n="lt_go"></button>
+                <div class="prog"><span id="ltProg"></span></div>
+                <b class="num" id="ltLabel" style="font-size: 20px">—</b>
+                <input type="range" id="ltSlider" min="0" max="0" value="0" aria-label="Día" />
+                <button class="btn" id="ltPlay" data-i18n="play"></button>
+                <p class="small muted" id="ltInfo"></p>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </section>
+      <section id="scr-info" class="screen" hidden><div class="wrap knowledge"><div class="page-heading"><p class="eyebrow" data-i18n="info_eyebrow"></p><h1 data-i18n="info_title"></h1><p class="lead" data-i18n="info_intro"></p></div><nav class="subnav" aria-label="Secciones"><a href="#info" data-jump="basics" data-i18n="sn1"></a><a href="#info" data-jump="extra" data-i18n="info_topics"></a><a href="#mas" data-i18n="nav_more"></a></nav>          <section class="block" id="basics">
+            <div class="three">
+              <div>
+                <svg class="science-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="10"/><path d="M24 2v8m0 28v8M2 24h8m28 0h8M8.5 8.5l5.5 5.5m20 20 5.5 5.5m0-31-5.5 5.5m-20 20-5.5 5.5"/></svg>
+                <h3 data-i18n="c1_h"></h3>
+                <p class="muted" data-i18n="c1_p"></p>
+              </div>
+              <div>
+                <svg class="science-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><ellipse cx="24" cy="24" rx="8" ry="18"/><path d="M7 18h34M7 30h34"/></svg>
+                <h3 data-i18n="c2_h"></h3>
+                <p class="muted" data-i18n="c2_p"></p>
+              </div>
+              <div>
+                <svg class="science-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M3 37 17 12l10 17 7-12 11 20H3zm9-16 5 4 5-4"/></svg>
+                <h3 data-i18n="c3_h"></h3>
+                <p class="muted" data-i18n="c3_p"></p>
+              </div>
+            </div>
+          </section>          <section class="block" id="extra">
+            <h2 style="margin-bottom: 12px" data-i18n="info_h"></h2>
+            <div class="info" id="extraInfo"></div>
+          </section></div></section>
+    </main>
+    <footer><div class="wrap" data-i18n="footer"></div></footer>
+
+    <script src="vendor/plotly.min.js"></script>
+    <script src="js/lunar.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

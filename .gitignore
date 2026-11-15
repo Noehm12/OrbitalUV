@@ -1,26 +1,21 @@
-﻿# Python
+.venv/
 __pycache__/
 *.py[cod]
-*.pyo
-
-# Virtual environment
-venv/
-.venv/
-
-# IDE
-.vscode/
-.idea/
-
-# OS
+.pytest_cache/
 .DS_Store
+
+# big NASA downloads (see SOURCES.md) and intermediate results
+data/nasa/*.TIF
+data/nasa/*.bsp
+data/nasa/*.bpc
+data/work/
+
+# editor and OS leftovers
+venv/
+.idea/
+.vscode/
 Thumbs.db
 
-# Data
-data/raw/*
-data/processed/*
-
-# Streamlit
-.streamlit/
-
-# Environment variables
-.env
+# Firebase deploy cache
+.firebase/
+firebase-debug.log

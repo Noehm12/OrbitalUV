@@ -1,0 +1,13 @@
+{
+  "binary": "horizons_1km.bin",
+  "nx": 381,
+  "ny": 381,
+  "step": 1000.0,
+  "x0": -190000.0,
+  "y0": 190000.0,
+  "naz": 90,
+  "offset": -6.5,
+  "scale": 0.1,
+  "source": "LOLA LDEM_80S_80MPP_ADJ (NASA PGDA 90), 80 m, horizons traced up to 150 km",
+  "dem_resolution_m": 80
+}

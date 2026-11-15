@@ -1,0 +1,39 @@
+id,name,diameter_km,lat,lon,type,status,approved
+247,Amundsen,103.39,-84.44,83.07,Crater,Approved,1964
+16417,Bay,3.50,-88.76,-36.85,Crater,Approved,2025
+16195,Brill,17.00,-88.27,-93.41,Crater,Approved,2023
+16250,Burbidge,21.00,-86.35,48.60,Crater,Approved,2023
+953,Cabeus,100.58,-85.33,-42.13,Crater,Approved,1935
+16416,Cartwright,17.00,-87.65,-46.95,Crater,Approved,2025
+16270,Dawa,0.65,-85.45,31.66,Crater,Approved,2024
+1439,de Gerlache,32.71,-88.48,-88.34,Crater,Approved,2000
+1919,Faustini,42.48,-87.18,84.31,Crater,Approved,1994
+16251,Floss,9.00,-84.28,42.27,Crater,Approved,2023
+14502,Haworth,51.42,-87.45,-5.17,Crater,Approved,2008
+16418,Haynes,17.00,-88.75,167.39,Crater,Approved,2025
+16004,Henson,43.00,-88.57,-130.63,Crater,Approved,2021
+14534,Ibn Bajja,11.98,-86.30,-75.04,Crater,Approved,2009
+16268,Jaci,1.80,-85.42,31.23,Crater,Approved,2024
+14535,Kocher,24.03,-84.47,-134.02,Crater,Approved,2009
+14536,Kuhn,16.61,-84.48,-152.48,Crater,Approved,2009
+16415,Lacus Tenebrarum,85.00,-86.71,-87.67,Lacus,Approved,2025
+16317,Lhamu,1.40,-85.92,-1.62,Crater,Approved,2024
+3603,Malapert,72.38,-85.00,11.40,Crater,Approved,1935
+15242,Malinkin,8.28,-87.22,75.94,Crater,Approved,2014
+16008,Marvin,4.60,-89.13,-87.78,Crater,Approved,2021
+16269,Masina,1.40,-85.42,32.15,Crater,Approved,2024
+16396,Mons Cabeus,43.00,-83.67,-36.16,Mons,Approved,2025
+16394,Mons Kocher,67.00,-85.46,-118.06,Mons,Approved,2025
+16338,Mons Malapert,67.00,-85.98,-1.67,Mons,Approved,2024
+16070,Mons Mouton,130.00,-84.60,31.00,Mons,Approved,2022
+4321,Nobile,79.27,-85.28,53.27,Crater,Approved,1994
+16449,Oberbeck,58.00,-83.55,68.14,Crater,Approved,2026
+5450,Shackleton,20.92,-89.67,129.78,Crater,Approved,1994
+5494,Shoemaker,51.82,-88.14,45.91,Crater,Approved,2000
+15325,Slater,25.12,-88.08,111.29,Crater,Approved,2015
+16007,Spudis,13.00,-89.51,-84.61,Crater,Approved,2021
+16011,Stose,16.70,-86.38,32.13,Crater,Approved,2021
+5782,Sverdrup,32.83,-88.32,-153.39,Crater,Approved,2000
+15938,Tooley,7.00,-88.04,51.31,Crater,Approved,2020
+16395,Whitaker,20.00,-84.67,0.69,Crater,Approved,2025
+6541,Wiechert,40.82,-84.03,164.70,Crater,Approved,1970

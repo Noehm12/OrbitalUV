@@ -1,0 +1,44 @@
+{
+  "validation": {
+    "sun_all": {
+      "n": 579121,
+      "mean_abs": 1.4,
+      "rmse": 2.64,
+      "bias": -0.34,
+      "r": 0.984,
+      "p90_abs": 3.09
+    },
+    "earth_all": {
+      "n": 579121,
+      "mean_abs": 2.74,
+      "rmse": 4.64,
+      "bias": -1.37,
+      "r": 0.986,
+      "p90_abs": 7.11
+    },
+    "sun_84": {
+      "n": 416757,
+      "mean_abs": 1.4,
+      "rmse": 2.7,
+      "bias": -0.32,
+      "r": 0.983,
+      "p90_abs": 3.18
+    },
+    "earth_84": {
+      "n": 416757,
+      "mean_abs": 2.69,
+      "rmse": 4.59,
+      "bias": -1.59,
+      "r": 0.983,
+      "p90_abs": 6.74
+    }
+  },
+  "best_lit": {
+    "sun": 89.6,
+    "lat": -89.687,
+    "lon": -162.711,
+    "near": "Shackleton",
+    "near_km": 10.8
+  },
+  "permanent_shadow_pct": 7.9
+}
